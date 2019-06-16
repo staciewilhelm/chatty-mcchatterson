@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Chatty McChatterson</title>
+      <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet" id="font-awesome" />
+      <link href="/css/chat.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="chat-wrapper">
+      <h1>Start chatting!</h1>
+      <div class="chat-messages-wrapper">
+        <div class="game-wrapper">
+          <p id="initiatedText">User <span id="userId"></span> wants to place a game of rock/paper/scissors.<br />What's your move?</p>
+          <p id="waitingText">Waiting for player move</p>
+          <div id="resultsText">
+            <p id="counterMove"></p>
+            <p id="initiatedMove"></p>
+            <p id="gameResult"></p>
+          </div>
+        </div>
+        <ul id="chatMessages"></ul>
+      </div>
+      <div class="message-input-wrapper">
+        <div id="typingWrap" class="typing-wrapper">
+          <i class="fas fa-comment-dots"></i>
+          <span id="userTyping"></span>
+        </div>
+        <form id="newMessage">
+          <input id="message" class="message" placeholder="Send message" />
+          <button class="send-message">
+            Send
+          </button>
+        </form>
+      </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+  </body>
+</html>

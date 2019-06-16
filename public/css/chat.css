@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ededed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.chat-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  float: none;
+}
+
+.chat-wrapper h1 {
+  border-bottom: 3px solid #333;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.chat-wrapper p {
+  color: #333;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+
+.chat-messages-wrapper {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.message-input-wrapper {
+  margin: 15px auto;
+}
+
+.message-input-wrapper #newMessage {
+  margin: 15px auto;
+  width: 75%;
+}
+
+.message-input-wrapper #message {
+  border: 1px solid #000;
+  margin: 15px auto;
+  width: 80%;
+}
+
+.message-input-wrapper button {
+  border: 1px solid #ebebeb;
+}
+
+.message-input-wrapper button:hover {
+  background-color: #ebebeb;
+  border: 1px solid #C8C8C8;
+}
+
+.chat-messages-wrapper ul li {
+  list-style: none;
+}
+
+.chat-messages-wrapper ul li span {
+  color: #ccc;
+  display: block;
+  font-size: 12px;
+  font-family: 'Lucida Sans', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+.game-wrapper {
+  background-color: #FDFDFD;
+  border: 1px solid #C8C8C8;
+  display: none;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.game-wrapper #gameResult,
+.game-wrapper #initiatedText,
+.game-wrapper #waitingText {
+  display: none;
+}
+
+.game-wrapper #resultsText p {
+  font-weight: normal;
+}
+
+.game-wrapper #resultsText p {
+  font-weight: bold;
+}
+
+.player-move-wrapper {
+  border: 1px solid green;
+  display: none;
+}
+
+#typingWrap {
+  display: none;
+}
+
+#userTyping {
+  color: #C8C8C8;
+  font-style: italic;
+}

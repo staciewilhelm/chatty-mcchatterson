@@ -1,0 +1,23 @@
+{
+  "author": "Stacie Wilhelm",
+  "name": "chatty-mcchatterson",
+  "description": "Chatty McChatterson Project",
+  "version": "1.0.0",
+  "license": "UNLICENCED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/staciewilhelm/chatty-mcchatterson.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0"
+  }
+}
